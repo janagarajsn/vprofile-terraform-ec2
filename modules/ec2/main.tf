@@ -3,7 +3,7 @@ resource "aws_instance" "mysql" {
     ami = var.ami_id
     instance_type = var.instance_type
     subnet_id = var.subnet_id
-    security_groups = [var.security_group_id]
+    vpc_security_group_ids = [var.security_group_id]
     key_name = var.keyname
     
     tags = {
@@ -16,7 +16,7 @@ resource "aws_instance" "memcached" {
     ami = var.ami_id
     instance_type = var.instance_type
     subnet_id = var.subnet_id
-    security_groups = [var.security_group_id]
+    vpc_security_group_ids = [var.security_group_id]
     key_name = var.keyname
     
     tags = {
@@ -29,7 +29,7 @@ resource "aws_instance" "rabbitmq" {
     ami = var.ami_id
     instance_type = var.instance_type
     subnet_id = var.subnet_id
-    security_groups = [var.security_group_id]
+    vpc_security_group_ids = [var.security_group_id]
     key_name = var.keyname
     
     tags = {
@@ -42,7 +42,7 @@ resource "aws_instance" "application" {
     ami = var.ami_id
     instance_type = var.instance_type
     subnet_id = var.subnet_id
-    security_groups = [var.security_group_id]
+    vpc_security_group_ids = [var.security_group_id]
     key_name = var.keyname
     
     tags = {
@@ -55,7 +55,7 @@ resource "aws_instance" "web" {
     ami = var.ami_id
     instance_type = var.instance_type
     subnet_id = var.subnet_id
-    security_groups = [var.security_group_id]
+    vpc_security_group_ids = [var.security_group_id]
     key_name = var.keyname
     
     tags = {

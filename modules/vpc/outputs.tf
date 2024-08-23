@@ -1,8 +1,4 @@
-# Output VPC ID and Subnet ID
-output "vpc_id" {
-    value = data.aws_vpc.default.id
-}
-
+# Output Subnet ID
 output "subnet_id" {
     value = data.aws_subnet.default.id
 }

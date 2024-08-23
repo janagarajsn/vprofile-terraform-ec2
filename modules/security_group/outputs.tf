@@ -1,4 +1,4 @@
-# Output Security Group ID
+# Output security group id
 output "security_group_id" {
-    value = aws_security_group.vpsg.id
+    value = data.aws_security_group.existing.id
 }

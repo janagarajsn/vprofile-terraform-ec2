@@ -1,3 +1,16 @@
+# variable for region
+variable "region" {
+    description = "The AWS region to deploy into"
+    type        = string
+}
+
+# variable for availability zone
+variable "availability_zone" {
+    description = "The availability zone for the subnet"
+    type        = string
+    default     = "us-east-2a"
+}
+
 # variable for security group id
 variable "security_group_id" {
     description = "The security group id"

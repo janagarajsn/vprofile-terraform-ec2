@@ -25,5 +25,5 @@ variable "instance_type" {
 variable "security_group_id" {
   description = "The security group id"
   type        = string
-  default     = "sg-0edcb388899f5430b"
+  default     = "vprofile-sg-us2"
 }
